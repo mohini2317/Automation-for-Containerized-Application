@@ -1,0 +1,27 @@
+# .gitignore
+
+# Ignore Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+**/.terraform/
+
+# Ignore Python dependencies
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# If you have a venv or other virtualenv
+venv/
+*.venv
+venv.bak/
+.venv/
+ENV/
+
+# Ignore PyCharm files
+.idea/
+
+# Ignore Jupyter Notebook files
+.ipynb_checkpoints
