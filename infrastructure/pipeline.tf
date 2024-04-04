@@ -213,7 +213,7 @@ data "aws_iam_policy_document" "codebuild_policy_doc" {
       "eks:*"
     ]
     resources = [
-      "arn:aws:eks:eu-west-1:${data.aws_caller_identity.current.account_id}:cluster/*"
+      "arn:aws:eks:ap-south-1:${data.aws_caller_identity.current.account_id}:cluster/*"
     ]
   }
 }
