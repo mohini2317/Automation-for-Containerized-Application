@@ -1,3 +1,3 @@
-resource "aws_ecr_repository" "aritra_eks_demo" {
-    name = "aritra-eks-demo"
+resource "aws_ecr_repository" "ecr_eks_demo" {
+    name = "ecr-eks-demo"
 }

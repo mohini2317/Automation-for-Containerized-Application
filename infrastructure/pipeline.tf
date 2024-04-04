@@ -4,11 +4,11 @@ data "aws_caller_identity" "current" {}
 
 variable "github_owner" {
   description = "GitHub repository owner"
-  default = "aritnag"
+  default = "mohini2317"
 }
 
 variable "github_repo" {
-  default = "e2e-eks-codepipeline-tf"
+  default = "Automation-for-Containerized-Application"
   description = "GitHub repository name"
 }
 
@@ -65,7 +65,7 @@ resource "aws_codepipeline" "eks_codepipeline" {
 }
 
 resource "aws_s3_bucket" "codepipeline_bucket" {
-  bucket = "eks-codepipeline-bucket"
+  bucket = "eks-codepipeline-bucket-demo1"
 }
 
 resource "aws_iam_role" "codepipeline_role" {

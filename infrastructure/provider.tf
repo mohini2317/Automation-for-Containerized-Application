@@ -1,20 +1,12 @@
 # Initialize Terraform and configure the AWS provider
 provider "aws" {
-  region = "eu-west-1"
-
-  default_tags {
-    tags = {
-      Component  = "eks-demoapp-service"
-      Department = "Test"
-    }
-  }
-
+  region = "ap-south-1"
 }
 
 terraform {
   backend "s3" {
-    bucket = "eks-tf-state-bucket-aritra-eks"
-    key    = "eks-tf-state"
-    region = "eu-west-1"
+    bucket = "tf-state-bucket-demo-eks"
+    key    = "state/terraform.tfstate"
+    region = "ap-south-1"
   }
 }

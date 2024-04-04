@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "persist_data" {
-  name         = "aritra_eks_demo"
+  name         = "db_eks_demo"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "id"
 
