@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: aritra-eks-demo
-        image: 123456789.dkr.ecr.eu-west-1.amazonaws.com/aritra-eks-demo:v1  # Update this line
+        image: 096400694479.dkr.ecr.ap-south-1.amazonaws.com/ecr-eks-demo:adc6a3a  # Update this line
         ports:
         - containerPort: 5000
         resources:
