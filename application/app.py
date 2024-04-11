@@ -10,7 +10,7 @@ from boto3.dynamodb.conditions import Key
 app = Flask(__name__)
 
 # Initialize DynamoDB client
-dynamodb = boto3.resource('dynamodb', region_name='eu-west-1')
+dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')
 
 # Assuming the DynamoDB table name is set as an environment variable
 table_name = os.environ.get('DYNAMODB_TABLE_NAME')
