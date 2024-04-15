@@ -43,7 +43,7 @@ phases:
       - cat deployment.yaml
       - echo Apply deployment to Kubernetes...
       - kubectl apply -f deployment.yaml
-      - kubectl apply -f service.yaml
+      #- kubectl apply -f service.yaml
       - echo Build completed on `date`
 
 cache:
