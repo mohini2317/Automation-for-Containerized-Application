@@ -27,3 +27,17 @@ spec:
         env:
           - name: DYNAMODB_TABLE_NAME
             value: "aritra_eks_demo"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aritra-eks-demo-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: aritra-eks-demo
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
